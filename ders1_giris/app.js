@@ -48,6 +48,63 @@ let name2= 'Faruk';
 let name3=`Oguzhan`;
 console.log(name3);
 
+//=====ARİTMETİK OPERATORLER
+
+const kola=5;
+const cips=6;
+const ekmek=2;
+console.log(kola + cips + ekmek);
+console.log("toplam fiyat", kola + cips + ekmek);
+
+const ad ="can";
+const soyad="canan";
+console.log(ad+soyad);
+
+const s1=7;
+let s2= "7";
+console.log(s1+s2); //77
+
+console.log("benim adım" + " "+ad +" "+"benim yasım" +" "+s1);
+//! Template literal ===============================
+console.log(`benim adım ${ad} benim yasım ${s1}`);
+// üs alma **
+const taban =2;
+const us =3;
+console.log(taban**us);  //2*2*2=8
+
+// mod alma %
+const sayi=123;
+const birler=sayi%10;
+console.log(birler);
+
+//==karşılaştırma operatörleri
+const s3 = 5;
+const s4="5";
+console.log(s3==s4);
+console.log(s3===s4);
+
+
+// todo  TİP DEĞİŞİMLERİ======
+
+const para ="100";
+console.log(para+15); //10015
+console.log(Number(para)+15); //115
+
+const sayi5=56;
+console.log(String(sayi5)+sayi5);
+console.log(typeof sayi5);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
