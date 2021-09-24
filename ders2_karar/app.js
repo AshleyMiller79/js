@@ -60,11 +60,11 @@
 // alert(result); //hem pop-art olarak sonucu çıkarttık
 
 
-// ÖRNEK
-//  const borç = 0;
-//  const maaş = 3000;
-//  console.log(borç && maaş > 2825 ? "Kredi Alabilir  🤑" : "Kredi Alamaz 🥺");
-
+// ÖRNEK //borc true olması yok anlamında
+ const borç = true;
+ const maaş = 3000;
+ console.log(borç && maaş > 2825 ? "Kredi Alabilir  🤑" : "Kredi Alamaz 🥺");
+//!0=!false=true;
 //MacOS işletim sisteminde Emoji ve Semboller penceresini açmak için; klavyeden 'control' , 'command' ve 'space' tuşlarına aynı anda basın. Ardından ilgili
 //metin içeriğinde ya da sohbet penceresinde emoji klavyesi karşınıza çıkacaktır.
 //Metin girişi sırasında Windows logo(pencere) tuşu + . (nokta) yazın. Emoji klavyesi görüntülenir.
