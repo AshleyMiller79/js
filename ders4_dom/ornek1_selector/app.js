@@ -13,7 +13,7 @@ buton.style.fontSize = "18px";
 buton.textContent = "ARA";
 //! *********textContent=tag lerin içeriğindeki yazıyı değiştirmek istersek
 
-//***** GETELEMENTBYTAGNAME */ bu kullanım tercih edilmiyor, class adı =tag adı
+//***** GETELEMENTBYTAGNAME */ bu kullanım tercih edilmiyor
 
 // const resim = document.getElementsByTagName("img");
 
@@ -21,9 +21,9 @@ buton.textContent = "ARA";
 // resim[0].style.height = "300px";
 // resim[1].style.border = "3px solid red";
 
-//*****GETELEMENTBYCLASSNAME */
+//*****GETELEMENTBYCLASSNAME */ class adıyla çağırma,  ama getElementsByTagName gibi dizi şeklinde algılıyor.
 
-const baslık = document.getElementsByClassName("h1");
+const baslık = document.getElementsByClassName("H1");
 baslık[0].style.textAlign = "center";
 
 // *********QUERYSELECTOR*********
@@ -37,7 +37,7 @@ document.querySelector("#govde").style.backgroundImage =
 //*****EVENT****** */
 
 //(onmouseover, onmouseout =fare üstüne gelince ayrılınca)
-const h = document.querySelector(".h1");
+const h = document.querySelector(".H1");
 
 h.onmouseover = function () {
   h.style.color = "red";
