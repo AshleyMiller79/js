@@ -98,7 +98,6 @@ if( klavye.keyCode==13    ) { // enter ı çağırdık
 }if (klavye.keyCode==46) //delete yi çağırdık 
 {
 document.querySelector(".sil").onclick();
-
 }
 };
 
