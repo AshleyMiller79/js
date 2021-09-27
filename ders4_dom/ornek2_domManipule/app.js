@@ -30,6 +30,7 @@ resim.src="./img/telfırlat.gif"; //resimi yeni gif le değiştirdik
  //  // yeni eklenen satiri var olan listeye (ul) baglayalim.
  //  // liste.appendChild(yeniLi);
 
+ //kısa yol
  const liste = document.querySelector(".liste"); // dillerin girili olduğu listeye ulaştık
  // ekle butonuna ulaştık
  document.querySelector(".ekle").onclick=function() {
@@ -44,7 +45,7 @@ resim.src="./img/telfırlat.gif"; //resimi yeni gif le değiştirdik
  //sil butonuna tıklandığında li elemanı silinsin
 //sil butonuna ulaştık
    document.querySelector(".sil").onclick=function() {
-liste.removeChild(liste.lastChild); //listenin çocuklarından listenin son çocuğunu sildik
+liste.removeChild(liste.lastElementChild); //listenin çocuklarından listenin son çocuğunu sildik
 
 //!  SAYFAMIZ BİTMEDİ KÜÇÜK BÜYÜK KISMINI DAHA YAPMADIK 
 
