@@ -68,10 +68,24 @@ textbox.value=textbox.value.toUpperCase();
 
 }
   
+//mouse resmin üstüne geldiğinde aslan kükresin 
+resim.onmouseover=function () {
+resim.src="./img/aslan2.jpeg";
+}
 
+//2. ama addEventListener() yolu 
 
+// resim.addEventListener("mouseout",function (){
+//    resim.src = "./img/aslan2.jpeg";
+// })
 
+//mouse resmin üstünden çekildiğinde
 
+resim.onmouseout= function () {
+resim.src="./img/aslan1.jpeg";
 
+}
+
+//enter=13    delete=46
 
 
