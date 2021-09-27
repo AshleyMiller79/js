@@ -87,5 +87,37 @@ resim.src="./img/aslan1.jpeg";
 }
 
 //enter=13    delete=46
+//onkeydown= klavyedeki tuşa basıp elinizi çektiğinizde
+
+document.querySelector(".dil").onkeydown=function(klavye) {
+
+if( klavye.keyCode==13    ) { // enter ı çağırdık
+
+   document.querySelector(".ekle").onclick();
+
+}if (klavye.keyCode==46) //delete yi çağırdık 
+{
+document.querySelector(".sil").onclick();
+
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
