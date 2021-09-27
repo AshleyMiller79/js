@@ -1,4 +1,4 @@
-//ara butonuna tıklandığında çalan telefon çıksın,zil çalsın
+//? ara butonuna tıklandığında çalan telefon çıksın,zil çalsın
 let resim =document.querySelector(".resim"); //resim e ulaştım
 let ring =document.querySelector(".ses"); //audio ya ulaştım 
 //ara butonuna ulaştım
@@ -6,7 +6,7 @@ document.querySelector(".on").onclick=function(){
 resim.src="./img/img.gif";//resim değiştirdim
 ring.play(); //sesi çalıştırdım play yaptım
 }
-//baglat butonuna basınca gif gelsin ses kesilsin
+//? baglat butonuna basınca gif gelsin ses kesilsin
 
 //baglat butonunu cagırdık
 document.querySelector(".off").onclick=function(){
@@ -14,13 +14,13 @@ document.querySelector(".off").onclick=function(){
   ring.pause();
 } //tel sesini susturduk
 
-// konus butona basınca yeni gif gelsin 
+//? konus butona basınca yeni gif gelsin 
 //konus butonuna ulaştık
 document.querySelector(".speak").onclick=function() {
 resim.src="./img/telfırlat.gif"; //resimi yeni gif le değiştirdik
 
 }
-//ekle butonuna basıldığında yeni bir li ekle upuzun yol
+//?ekle butonuna basıldığında yeni bir li ekle upuzun yol
  // // yeni girilen satiri saklamak icin bir li olusturduk.
  //  // const yeniLi = document.createElement("li");
  //  // yeni li icin textnode olusturduk
@@ -42,15 +42,34 @@ resim.src="./img/telfırlat.gif"; //resimi yeni gif le değiştirdik
   giris.value=""; //inputa girilen değeri ekleyince inputtan silinmesi için
  }
 
- //sil butonuna tıklandığında li elemanı silinsin
+ //?sil butonuna tıklandığında li elemanı silinsin
 //sil butonuna ulaştık
    document.querySelector(".sil").onclick=function() {
 liste.removeChild(liste.lastElementChild); //listenin çocuklarından listenin son çocuğunu sildik
+  }
 
-//!  SAYFAMIZ BİTMEDİ KÜÇÜK BÜYÜK KISMINI DAHA YAPMADIK 
+const parag=document.querySelector(".forH1");
+parag.innerHTML=`<h1>${"Programlama Dilleri"}</h1>`;
 
+
+
+
+
+//Klavyeden bir tuşa basıldığında büyüsün küçülsün
+document.querySelector(".textbox").onkeyup=function (){
+   const checkbox= document.querySelector(".checkbox");
+   const textbox= document.querySelector(".textbox");
+   if(checkbox.checked) {
+textbox.value=textbox.value.toUpperCase();
+
+   }else {
+      textbox.value = textbox.value.toLowerCase();
    }
+
+}
   
+
+
 
 
 
