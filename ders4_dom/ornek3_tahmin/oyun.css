@@ -1,62 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/* google font a gir display içinde start 2p, select yap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*eğer bunu kullanırsanız, padding değeri kutunun genişliğine ilave olarak eklenmez ve kutunun genişliği sabit kalır. */
+
 }
+
+header {
+  position: relative; /*Elementler normal konumunda bulunuyor fakat eğer biz istersek o elementi bulunduğu konuma göre farklı bir pozisyona götürebiliyoruz.*/
+
+  height: 300px;
+  border-bottom: 7px solid #eee;
+}
+h1 {
+  /* header parent ona position relative, child ı olan h1 e de absolute vererek parent ına göre yerleştirmiş oluyoruz, yani ortala dersek parentın içinde ortala*/
+  position: absolute;/*bu olmazsa sol üst köşeye yapışır. Elemente direk pozisyon verebiliyoruz. Relative'de olduğu gibi eski bulunduğu konuma göre HAREKET ETMİYOR.. Direk bizden aldığı pozisyon değerlerine göre hareket ediyor. Poziyonu belirlerken bir üstteki RELATİVE elemente göre konum alıyor. Eğer bu elementin PARENT(bir üstteki element) elementi RELATİVE değilse, o zaman BODY'ye göre hareket eder.
+*/
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*yazılan şey 0 px li olsaydı buna gerek yoktu, h1 e ayrılan alanda yüzde elli yazı girsin ve bu alanda yazı tam ortada bulunsun*/
+}
+
+
 
 body {
-color:white;
-background-color:#2d3436;
-font-family:"Press Start 2P"
-}
-header{
- position: relative;
-
- height: 300px;
-border-bottom: 7px solid #eee;
-
-}
-h1{
- position:absolute;
-width: 100%;
-text-align: center;
-top:50%;
+  font-family: "Press Start 2P";
+  color: white;
+  background-color: #2d3436;
 }
 
-.aralik{
- position:absolute;
-right:15px;
-top:20px;
+.arasında {
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  right: 15px;
 }
 
-.btn{
- margin-top:15px;
- margin-left: 15px;
-font-size:30px;
-font-family: inherit;
-/* buton dışındakilere atadığımız font-family den butonlarda yararlansın diye */
-padding:20px 25px;
-cursor: pointer;
-background-color:#eee;
+.btn {
+  margin-top: 15px;
+  margin-left: 15px;
+  border: none;
+  font-family: inherit;
+  font-size: 30px;
+  padding: 20px 25px;
+  cursor: pointer;
+  background-color: #eee;
+  text-align: center;
 }
+
 .question {
-position:absolute;
-left:50%;
-width:180px;
-background-color:#eee;
-color: #333;
-bottom:0;
-font-size: 60px;
-padding: 25px;
-text-align: center;
-transform: translate(-50%,50%);
-
-
+  position: absolute;
+  left: 50%;
+  width: 180px;
+  bottom: 0;
+  padding: 25px;
+  background-color: #eee;
+  color: #333;
+  font-size: 60px;
+  text-align: center;
+  transform: translate(-50%, 50%);
 }
-
-
 main {
   height: 600px;
   color: #eee;
@@ -65,7 +73,7 @@ main {
   align-items: center; 
   /*dikey ortalar*/
 }
-.sag {
+.sağ {
   width: 400px;
   font-size: 20px;
 }
@@ -94,8 +102,6 @@ main {
 .puan {
   margin-bottom: 20px;
 }
-
-
 
 
 
