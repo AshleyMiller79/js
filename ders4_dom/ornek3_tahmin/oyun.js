@@ -16,8 +16,34 @@ document.querySelector(".question").textContent=rastgeleSayi;
 document.querySelector(".mesaj").textContent="🎉Tebrikler Bildiniz";
 
 //rekoru güncelle
-
+if(puanPc>rekorPc){
+  rekorPc=puanPc;
+  document.querySelector(".rekor-skor").textContent=puanPc;
+}
 
    }
+//tahmin yanlış ise
+else{
+  if(puanPc>1){
+  puanPc--;
+let mesaj= document.querySelector(".mesaj");
+tahmin < rastgeleSayi ? (mesaj.textContent = "Arttır 🆙") : (mesaj.textContent = "Azalt ⬇️");
+document.querySelector(".skor").textContent=puanPc;
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
  };
