@@ -35,12 +35,35 @@ tahmin < rastgeleSayi ? (mesaj.textContent = "Arttır 🆙") : (mesaj.textConten
 document.querySelector(".skor").textContent=puanPc;
 
 }else {
-
-mesaj.textContent="Oyunu kaybettiniz 😔";
+document.querySelector(".mesaj").textContent="Oyunu kaybettiniz 😔";
 document.querySelector(".skor").textContent=0;
 document.querySelector("body").style.backgroundColor = "red";
+
 
 }//! 2 nested bitis
 
 } //! iki bitis
-};
+}
+
+//tekrar butonuna basıldığında baslangıc degerleri yüklensin
+document.querySelector(".tekrar").onclick=()=>{
+rastgeleSayi = Math.floor(Math.random() * 20 + 1);
+document.querySelector("body").style.backgroundColor = "#2d3436";
+document.querySelector(".question").textContent="?";
+document.querySelector(".mesaj").textContent="Tahmine Baslanıyor!!";
+puanPc=10;
+document.querySelector(".skor").textContent=puanPc;
+document.querySelector(".tahmin").value=" ";
+
+}
+
+
+
+
+
+
+
+
+
+
+
