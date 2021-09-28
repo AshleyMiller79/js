@@ -23,7 +23,7 @@ buton.textContent = "ARA";
 
 //*****GETELEMENTBYCLASSNAME */ class adıyla çağırma,  ama getElementsByTagName gibi dizi şeklinde algılıyor.
 
-const baslık = document.getElementsByClassName("H1");
+const baslık = document.getElementsByClassName("h1");
 baslık[0].style.textAlign = "center";
 
 // *********QUERYSELECTOR*********

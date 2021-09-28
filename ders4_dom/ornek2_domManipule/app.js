@@ -52,7 +52,9 @@ const parag=document.querySelector(".forH1");
 parag.innerHTML=`<h1>${"Programlama Dilleri"}</h1>`;
 
 
+// todo SETATTRİBUTE metodu****************
 
+// document.querySelector(".checkbox").setAttribute("type", "checkbox");
 
 
 //Klavyeden bir tuşa basıldığında büyüsün küçülsün

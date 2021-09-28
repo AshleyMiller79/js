@@ -56,6 +56,17 @@ document.querySelector(".skor").textContent=puanPc;
 document.querySelector(".tahmin").value=" ";
 
 }
+// klavyeden bir tusa basıldığında calıs
+
+document.querySelector(".tahmin").onkeydown=function (olay){
+if(olay.keyCode==13){
+  document.querySelector(".kontrol").onclick();
+}
+if(olay.keyCode==82){
+  document.querySelector(".tekrar").onclick();
+}
+}
+
 
 
 
