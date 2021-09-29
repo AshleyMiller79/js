@@ -147,3 +147,22 @@ const renkler = [
   "Yellow",
   "YellowGreen",
 ];
+
+document.querySelector(".btn").onclick=function() {
+
+
+const rastgele=Math.floor(Math.random()*renkler.length);
+
+document.querySelector(".renk").textContent=renkler[rastgele];
+
+document.querySelector("body").style.backgroundColor=renkler[rastgele];
+
+document.querySelector("h1").style.backgroundColor="white";
+document.querySelector("h1").style.color=renkler[rastgele];
+
+};
+
+
+
+
+
