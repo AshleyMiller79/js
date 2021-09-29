@@ -76,6 +76,28 @@ console.log(sayılar.lastIndexOf(5));
 console.log(sayılar.indexOf(2,  4)); //8  ikinci 2 yi döndürür (4. indexten sonra aramaya baslar)
 console.log(sayılar.indexOf(5,  3)); // 7
 
+// joın() dizinin elemanlarını birleştirip string hale getirir
+ console.log( sayılar.join("-"));
+ // join default virgüllerle ayırarak diziden kurtarır ama istersek " " yazarak boşluklarla, "- " yaparak - lerle ayırabiliriz
+
+ //toString() join gibidir ama sadece virgülle ayırır
+ console.log( sayılar.toString());
+
+
+ //*************** */
+
+ const arabalar=["bmw" , "mercedes" ,"Volvo", "sahin", "anadol"];
+ //slice() 
+ console.log( arabalar.slice(2)); // 2. indexli elemandan sonuna kadar
+
+console.log(arabalar.slice(1, 3)); // ilk index dahil, 2. sırada yazan index e kadar (2. dahil değil)
+
+//****CONCAT******* */
+
+const birleşik= sayılar.concat(arabalar,true,false,[3,4,5],meyveler);
+
+
+console.log(birleşik);
 
 
 
@@ -95,6 +117,3 @@ console.log(sayılar.indexOf(5,  3)); // 7
 
 
 
-
-baslik.textContent = sayılar;
-console.log(sayılar);
