@@ -14,11 +14,11 @@ liste.innerHTML=liste.innerHTML + `<li> ${i} </li>`
 const giris= document.querySelector(".liste");
 
 document.querySelector(".ekle").onclick=function(){
-liste.innerHTML=liste.innerHTML + `<li> ${giris.value} </li>`
- giris.value="";
+  liste.innerHTML = liste.innerHTML + `<li> ${giris.value} </li>`;
 
-maaslar.push(giris.value);
-
+  maaslar.push(giris.value);
+  acıklamaGuncelle(maaslar);
+   giris.value="";
 }
 
 //Sil butonuna tiklandiginda listedeki ve dizideki son elamani sil.
@@ -28,4 +28,17 @@ document.querySelector(".sil").onclick = function () {
   } else {
     maaslar.pop();
      liste.removeChild(liste.lastElementChild);
+     acıklamaGuncelle(maaslar);   
   }};
+
+
+
+const acıklamaGuncelle= function(maaslar){
+
+document.querySelector(".acıklama").innerHTML=` Maaslar: ${ maaslar.join(" ")}`;
+
+
+
+}
+
+
