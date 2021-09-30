@@ -155,7 +155,13 @@ const adlar = [
 adlar.filter((x)=>x.startsWith("A")).forEach((x)=>console.log(x));
 
 
+//*********REDUCE METODU */
 
+//!reduce çıkıs metodudur, reduce den sonra foreach çalışmaz
+
+const maaslarım= [3000, 5000, 4000 , 2000, 1000];
+
+console.log( maaslarım.reduce((x , y )=> x+y, 0 ));
 
 
 
