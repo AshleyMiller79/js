@@ -10,6 +10,7 @@ liste.innerHTML=liste.innerHTML + `<li> ${i} </li>`
 //   liste.innerHTML = liste.innerHTML + `<li> ${maaslar[i]} </li>`;
 // }
 
+
 //ekle butonuna tıkladığımızda diziye ve listeye yeni veri ekle 
 const giris= document.querySelector(".liste");
 
