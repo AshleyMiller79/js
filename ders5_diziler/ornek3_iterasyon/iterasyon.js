@@ -70,11 +70,30 @@ let ogrenciler =["Onur", "Hakan", "Furkan"];
 console.log( ogrenciler.forEach((ogrenci) => console.log(ogrenci)));
  //undefined
 
+ogrenciler.forEach((deger, index)=>console.log(index + ". kişi " + deger +"'dır"));
+
+
 console.log(ogrenciler);  //["Onur", "Hakan", "Furkan"];
+
+
 
 //*******MAP METODU***** */
 
 //! map metodu orjinal diziyi değiştirmez
+
+//ornek: bütün elemanların 3 katını alınız
+
+const rakamlar= [3, 5, 3, 2, 6, 7, 9];
+
+// console.log( rakamlar.map((x)=> x*3));
+
+console.log( rakamlar.map((x, index)=> `${index+1}. elemanın 3 katı ${x*3}`));
+
+
+
+
+
+
 
 
 
