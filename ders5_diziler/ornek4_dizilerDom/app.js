@@ -31,6 +31,8 @@ document.querySelector(".sil").onclick = function () {
      liste.removeChild(liste.lastElementChild);
      acıklamaGuncelle(maaslar);   
   }};
+  //! sayfa browser a yüklendiğinde kodlar yukarıdan aşağı çalışır. ekle ve sil butonuna henüz basmadığımız için buraları geçerek alttaki acıklamaGuncelle function una geçer ve önce onu okur. biz ekle ve sil butonuna basınca burada acıklamaGuncelle yi cagırabiliriz artık
+
 
 
 
