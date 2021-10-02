@@ -16,7 +16,7 @@
 <div id="tuslarArka">
 
 <div class="satır">
-<button class="btn light">C</button>
+<button class="btn light bos">C</button>
 <span> <strong>İPEK BİLGİN</strong> </span>
 </div>
 
@@ -124,10 +124,30 @@ onClick="hesapEt(div.value)"
 class="btn yellow "
 name="equal"
 value="="
-onClick="hesapEt(equal.value)"
+onClick="displayResult.value=eval(displayResult.value)"
 >
 </div>
 
+<!-- /*
+Burada eval() fonksiyonunun standart bir kullanımını göreceğiz.
+Öncelikle üç farklı değiken tanımlıyoruz. Daha sonra
+bu değişkenleri kullanarak birtakım matematiksel işlemler
+yapıyoruz. Bu matematiksel işlemler için eval() fonksiyonunu
+kullanıyoruz. Kod çalıştığında konsol ekranından çıkan sonuç
+şu olacaktır:
+
+        16
+        120
+        5
+*/
+
+var x = 3, y = 5, z = 8, topla, carp, cikar;  
+topla = eval("x + y + z");  
+carp = eval("x * y * z");  
+cikar = eval("z - x");  
+console.log(topla);  
+console.log(carp);  
+console.log(cikar);   -->
 
 
 
