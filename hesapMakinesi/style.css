@@ -1,0 +1,17 @@
+body{
+ background-color: tan;
+}
+h1{
+ margin-left: 40%;
+ margin-top:10% ;
+}
+
+.makine{
+background-color:rgb(60,60,60);
+height: 350px;
+width:275px;
+border-radius:10px;
+margin-left: 40%;
+/* margin-top:10%; */
+
+}
