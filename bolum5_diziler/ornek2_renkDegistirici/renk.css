@@ -1,0 +1,22 @@
+.container {
+  /* width=100px versek bu ölçüye göre ortalıyor yamuk oluyor (border la gösterebilirsin px olunca noluo), wiewport verince tarayıcı alanını (hepsine uygun crome, explorer vs) yüzde yüz alıp güzelce ortalar. 100%versekte olur, o sıfıra sıfır ekranı kaplar, bütün border a görebiliriz */
+  /* border: 2px solid red; */
+  width: 100vw; /* viewport with*/
+  height: 100vh; /*viewportr height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*sütun sütun hizala*/
+}
+.btn {
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(159, 122, 76);
+}
+h1 {
+  background-color: white;
+}

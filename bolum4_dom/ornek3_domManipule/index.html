@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DOM Ornek</title>
+  </head>
+  <body>
+    <main>
+      <div class="container text-center">
+        <!-- js de oluşturulan h1 e class verince buda etkilendi, istersek burada bozabiliriz. yada js de h1 e class adı veririz -->
+        <h1 class="text-center">Ornekler</h1>
+        <img class="resim" src="img/img2.jpg" alt="off" />
+        <div class="mt-4">
+          <audio class="ses" style="width: 0" controls="">
+            <source src="img/retro-ringtone .mp3" type="audio/mp3" />
+          </audio>
+
+          <button class="btn on btn-outline-warning">Ara</button>
+          <button class="btn off btn-outline-primary">Bağlat</button>
+
+          <button class="btn speak btn-outline-danger">Konuş</button>
+        </div>
+        <div class="input-div">
+          <label for="textbox">Bir seyler yaziniz</label>
+          <input class="textbox" type="text" value="" />
+          <label for="checkbox">Küçük/Büyük</label>
+          <input class="checkbox" type="checkbox" />
+        </div>
+        <div class="forH1"></div>
+        <ul class="liste text-start">
+          <li>javascript</li>
+          <li>Java</li>
+          <li>Phyton</li>
+          <li>C++</li>
+          <li>SQL</li>
+        </ul>
+
+        <div
+          class="
+            text-start
+            <!--!yazıları
+            sola
+            alma-->
+            d-flex
+            <!--
+            butonları,
+            dikeyde
+            hizalayarak
+            aynı
+            hizada
+            gösterdi-->
+            align-items-center
+            mt-5
+          "
+        >
+          <!--me-1 butonların sonuna boşluk sağladı-->
+          <input class="dil me-1" type="text" />
+          <button class="btn ekle btn-success me-1">Ekle</button>
+          <button class="btn sil btn-danger">Sil</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

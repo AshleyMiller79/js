@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <!-- buradaki hiyerarşik yapıyı slayttaki gibi ağaç şeklinde görmek istiyorsak,crome a html tree generator yazıp ekleyelim. bu sayfayı browserda açıp uzantıya basarsak aile ağacı çıkacaktır -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <!--birine id birine class atadık ki iki çağırmayı da görelim-->
+    <label for="r">Yaricapi giriniz:</label>
+    <input type="number" id="r" value="" /> <br />
+    <br />
+    <label for="h">Yukseklik giriniz:</label>
+    <input type="number" class="h" /> <br />
+    <br />
+    <h1>HACIM=<span class="hacim">0</span></h1>
+    <button class="btn" onclick="hesapla()">Hesapla</button>
+    <!--! index.html de event yapmayı gördük, normalde bunu (daha çok olay varsa)js de yapıcaz -->
+    <script src="app.js"></script>
+  </body>
+</html>

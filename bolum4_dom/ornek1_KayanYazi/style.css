@@ -1,0 +1,12 @@
+body {
+  background: #2ecc71;
+}
+#yazi {
+  margin: 80px auto;
+  padding: 20px;
+  width: 300px;
+  font-size: 25px;
+  background: #34495e;
+  color: #ecf0f1;
+  border: solid 3px #16a085;
+}

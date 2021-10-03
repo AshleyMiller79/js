@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTOF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      action="hesaplama"
+      class="sicaklik"
+      onsubmit="sicaklikHesaplama();return false"
+    >
+      <label for="deger">
+        SICAKLIK DEGERINIZI GIRINIZ.
+        <br />
+        (CELSIUS VEYA FAHRENAYT SECIMI YAPINIZ)
+      </label>
+      <br />
+      <input type="number" class="sayi" name="deger" id="deger" />
+      <select name="sayi_deger" id="sayi_deger" class="sayi_deger">
+        <option value="1">°Celsius</option>
+        <option value="2">°Fahrenheit</option>
+      </select>
+      <br />
+      <input type="submit" name="deger" class="veri" />
+      <br />
+      <span class="sonuc"></span>
+    </form>
+    <script src="sicaklik.js"></script>
+  </body>
+</html>

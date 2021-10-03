@@ -1,0 +1,26 @@
+.btn {
+  width: 100px;
+  height: 40px;
+}
+.input-div {
+  margin-top: 30px;
+  
+}
+.textbox,
+.dil {
+  width: 300px;
+  height: 40px;
+}
+
+.resim {
+  width: 400;
+  height: 400;
+}
+
+/* Bu class(h1) JS kodu icersinde olusturulmustur. */
+
+h1 {
+  margin-top: 30px;
+  color: red;
+  text-align: left;
+}

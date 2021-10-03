@@ -1,0 +1,81 @@
+/* marginler ve width ile height uzunlukları ayarlı olmalı, height içinde bulunduğu divden kısaysa alttan margin saçma, default gör öyle margin ver */
+body {
+  background-color: tan;
+}
+h1 {
+  margin-top: 10%;
+  margin-left: 40%;
+}
+.makina {
+  background-color: rgb(60, 60, 60);
+  height: 350px;
+  width: 275px;
+  border-radius: 10px;
+  margin-left: 40%;
+  padding-top: 10px;
+}
+
+.ekranBorder {
+  background-color: gray;
+  width: 240px;
+  /* width: 250 olursa verilen margin ler (sağ sol 17+17)sığmayacağından sıkıntı olur,işlemiyor gibi gözükür, bu yüzden son verilene göre pozisyon alsın manasında=>  position:relative,   top:Apx, left:Apx yazmak zorunda kalırız */
+  /* position:absolute =>childe parent ına göre konum alır */
+  height: 60px;
+  margin: 3px 17px 0 17px;
+}
+
+.ekranBorder input {
+  height: 47px;
+  background-color: rgb(179, 190, 138);
+  width: 220px; /*en fazla 20 margin verebilirim sağ sol*/
+  margin-left: 10px;
+}
+.button {
+  width: 45px;
+  height: 35px;
+
+  border-radius: 8px;
+  margin-left: 17px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+.button.dark {
+  color: white;
+  background-color: rgb(124, 122, 122);
+  border-bottom: black 2px solid;
+}
+.button.tomato {
+  color: black;
+  background-color: rgb(255, 71, 86);
+  border-bottom: black 2px solid;
+}
+.button.light {
+  background-color: rgb(185, 176, 176);
+  border-bottom: black 2px solid;
+}
+
+.button.yellow {
+  color: black;
+  background-color: orange;
+  border-bottom: black 2px solid;
+}
+.light:active {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.tomato:active {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.dark:active {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.yellow:active {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.satir {
+  margin: 15px 0 10px 0;
+}
