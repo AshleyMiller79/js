@@ -1,4 +1,4 @@
-function hesapEt(sonuc) {
+function calcNumbers(sonuc) {
   if (form.displayResult.value == 0) {
     form.displayResult.value = sonuc;
   } else {
